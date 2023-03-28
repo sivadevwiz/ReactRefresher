@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.counter {
+    padding: 10px 20px;
+}
