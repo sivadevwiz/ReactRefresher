@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.scss";
 
 function UseStateHook() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div className="wrap">
