@@ -1,0 +1,145 @@
+.game {
+    // background: white;
+    padding: 20px 100px;
+
+}
+
+* {
+    box-sizing: border-box;
+    background-color: white;
+    color: #000;
+  }
+  
+ 
+  .board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // width: 230px;
+    // height: 230px;
+    background-color: rgb(149, 255, 27);
+    justify-items: center; // horizontally align items center
+    align-items: center; //vertically align items center
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+  }
+
+  .reset {
+    margin-top: 20px;
+    button {
+      background: white;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+    
+  }
+  
+  .square {
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #999;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0;
+
+    
+
+    .player_x {
+      color: red;
+    }
+    .player_o {
+      color: blue;
+    }
+
+    &:hover {
+      background: #ebe8e8;
+    }
+    &:disabled {
+      background: white;
+      cursor: default;
+      border: none;
+      &.highlight {
+        background: rgb(250, 100, 0);
+      }
+    }
+  }
+
+
+  //Scoreboard
+
+  .scoreboard {
+    display: flex;
+    margin: 0 auto; //center self
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    
+    .player_wrap{
+      flex: 1;
+
+      &.current_player {
+        background-color: #f9fab7;
+      }
+      
+      .player {
+        min-width: 70px;
+        font-weight: bold;
+        background: inherit;
+      }
+      .score {
+        font-size: 1.7em;
+        font-weight: bold;
+        background: inherit;
+      }
+
+      .p_x {
+        color: red;
+      }
+
+      .p_o {
+        color: blue;
+      }
+      
+
+    }
+
+  }
+
+  .score_wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .winner {
+    margin: 0 auto;
+    display: flex;
+    width: 200px;
+    
+    .wins {
+      background-color: black;
+      color: white;
+      padding: 5px 30px;
+      border-radius: 0 0 5px 5px;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+
+    &.player_o {
+      justify-content: end;
+
+    }
+    
+  }
+  
+
+
