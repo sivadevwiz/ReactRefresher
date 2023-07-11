@@ -2,6 +2,16 @@
     // background: white;
     padding: 20px 100px;
 
+    .game-info {
+      li {
+        margin-bottom: 10px;
+      }
+      .button {
+        background-color: #ebe8e8;
+        border: 1px solid #000;
+      }
+    }
+
 }
 
 * {
@@ -22,6 +32,10 @@
     column-gap: 10px;
     row-gap: 10px;
     padding: 10px;
+
+    &.tied {
+      opacity: 0.3;
+    }
   }
 
   .reset {
@@ -139,6 +153,18 @@
 
     }
     
+  }
+
+  .tie_msg {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    position: relative;
+    top: -135px;
+    background: rgba(255, 255, 255, 0.5);
+
+
+
   }
   
 
