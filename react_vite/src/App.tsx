@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="App"></div>
-      {/* <UseStateHook></UseStateHook> */}
+      <UseStateHook></UseStateHook>
       {/* <TicTacToe></TicTacToe> */}
       <ReactFetch></ReactFetch>
       <ReactFetchClass></ReactFetchClass>
