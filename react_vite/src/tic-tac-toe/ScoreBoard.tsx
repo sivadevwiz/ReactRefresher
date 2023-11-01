@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-function ScoreBoard({ isGameOver, player, score }) {
-  console.log("player...............", player);
+function ScoreBoard({ isGameOver, player, score, isTie }) {
+  // console.log("player...............", player);
   const [current_player, setPlayer] = useState("");
 
   const checkPlayer = () => {
@@ -38,7 +38,9 @@ function ScoreBoard({ isGameOver, player, score }) {
           isGameOver && current_player === "O" ? "player_o" : null
         }`}
       >
-        <div className={`wins ${isGameOver ? "show" : null}`}>Wins!</div>
+        <div className={`wins ${isGameOver && !isTie ? "show" : null}`}>
+          Wins!
+        </div>
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import "./App.css";
 
 import UseStateHook from "./hooks/UseStateHook";
 import TicTacToe from "./tic-tac-toe/TicTacToe";
+import ReactFetch from "./fetch/React_Fetch";
+import ReactFetchClass from "./fetch/React_Fetch_Class";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -12,8 +14,10 @@ function App() {
   return (
     <>
       <div className="App"></div>
-      {/* <UseStateHook></UseStateHook> */}
-      <TicTacToe></TicTacToe>
+      <UseStateHook></UseStateHook>
+      {/* <TicTacToe></TicTacToe> */}
+      <ReactFetch></ReactFetch>
+      <ReactFetchClass></ReactFetchClass>
     </>
   );
 }
